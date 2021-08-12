@@ -1,8 +1,7 @@
 import "reflect-metadata";
-import express, { Application, Request, Response } from "express";
+import express, { Application } from "express";
 import database from "./infra/db";
 
-import { container } from "tsyringe";
 import "./shared/container";
 import newsRouter from "./router/newsRouter";
 import videosRouter from "./router/videosRouter";
