@@ -6,8 +6,10 @@
  * @type legenda {String} descrição da foto
  */
 export class Fotos {
-  thumb: String;
-  thumbNail: String;
-  credito: String;
-  legenda: String;
+  constructor(
+    readonly thumb: String,
+    readonly thumbNail: String,
+    readonly credito: String,
+    readonly legenda: String
+  ) {}
 }

@@ -10,11 +10,15 @@ import { Document } from "mongoose";
  * @type ativo {Boolean} status
  */
 export abstract class Core extends Document {
-  titulo: String;
-  texto: String;
-  imagem: String;
-  dataPublicacao: Date;
-  tags: String;
-  link: String;
-  ativo: Boolean;
+  constructor(
+    readonly titulo: String,
+    readonly texto: String,
+    readonly imagem: String,
+    readonly dataPublicacao: Date,
+    readonly tags: String,
+    readonly link: String,
+    readonly ativo: Boolean
+  ) {
+    super();
+  }
 }
