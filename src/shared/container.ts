@@ -3,6 +3,7 @@ import { container } from "tsyringe";
 import { GaleriaService } from "../services/galeriaService";
 import { NewsService } from "../services/newsService";
 import { VideosService } from "../services/videosService";
+import { PodcastsService } from "../services/podcastsService";
 
 container.register("INewsService", {
   useClass: NewsService,
@@ -14,4 +15,8 @@ container.register("IVideosService", {
 
 container.register("IGaleriaService", {
   useClass: GaleriaService,
+});
+
+container.register("IPodcastsService", {
+  useClass: PodcastsService,
 });
